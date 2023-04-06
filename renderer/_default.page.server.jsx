@@ -16,7 +16,7 @@ async function render(pageContext) {
     <PageLayout>
       <Page {...pageProps} />
     </PageLayout>,
-    { userAgent }
+    { userAgent: "vite-plugin-ssr" }
   );
 
   return escapeInject`<!DOCTYPE html>
